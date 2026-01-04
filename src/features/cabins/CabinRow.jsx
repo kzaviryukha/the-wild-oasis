@@ -100,13 +100,13 @@ function CabinRow({ cabin }) {
           </Modal.Window>
 
           {/* Deletion modal */}
-          <Modal.Open>
+          <Modal.Open opens="delete">
             <button>
               <HiTrash />
             </button>
           </Modal.Open>
 
-          <Modal.Window>
+          <Modal.Window name="delete">
             <ConfirmDelete
               resourseName="cabins"
               disabled={isDeleting}
